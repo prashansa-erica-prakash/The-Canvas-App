@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>The Canvas App</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>The Canvas App</h1>
+    </header>
+    <div class="container">
+        <section class="tools-board">
+            <div class="row">
+                <label class="title">Tools</label>
+                <ul class="options">
+                    <li class="option active tool" id="brush" title="Brush">
+                        <img src="icons/brush.jpg" alt="">
+                        <span>Brush</span>
+                    </li>
+                    <li class="option tool" id="eraser" title="Eraser">
+                        <img src="icons/eraser.png" alt="">
+                        <span>Eraser</span>
+                    </li>
+                    <li class="option">
+                        <input type="range" id="size-slider" min="1" max="30" value="5" title="Brush Size">
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <label class="title">Shapes</label>
+                <ul class="options">
+                    <li class="option tool" id="rectangle" title="Rectangle">
+                        <img src="icons/rectangle.png" alt="">
+                        <span>Rectangle</span>
+                    </li>
+                    <li class="option tool" id="circle" title="Circle">
+                        <img src="icons/circle.webp" alt="">
+                        <span>Circle</span>
+                    </li>
+                    <li class="option tool" id="triangle" title="Triangle">
+                        <img src="icons/triangle.jpg" alt="">
+                        <span>Triangle</span>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="fill-color" title="Fill Color">
+                        <label for="fill-color">Fill</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="row colors">
+                <label class="title">Colors</label>
+                <ul class="options">
+                    <li class="option"></li>
+                    <li class="option selected"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option">
+                        <input type="color" id="color-picker" value="#4A98F7">
+                    </li>
+                </ul>
+            </div>
+            <div class="row buttons">
+                <button class="clear-canvas">Clear Canvas</button>
+                <button class="undo-action">Undo</button>
+                <button class="redo-action">Redo</button>
+                <button class="save-img">Save Image</button>
+            </div>
+        </section>
+        <section class="drawing-board">
+            <canvas></canvas>
+        </section>
+    </div>
+    <footer>
+        <div id="foot">Created by: Prashansa Erica Prakash</div>
+    </footer>
+</body>
+</html>
